@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://gofiodesign.eu/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gofiodesign.eu/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gofiodesign.eu/en.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gofiodesign.eu/fr.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gofiodesign.eu/de.html"/>
+    <lastmod>2026-02-04</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://gofiodesign.eu/en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gofiodesign.eu/en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gofiodesign.eu/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gofiodesign.eu/fr.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gofiodesign.eu/de.html"/>
+    <lastmod>2026-02-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gofiodesign.eu/fr.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gofiodesign.eu/fr.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gofiodesign.eu/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gofiodesign.eu/en.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gofiodesign.eu/de.html"/>
+    <lastmod>2026-02-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gofiodesign.eu/de.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gofiodesign.eu/de.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gofiodesign.eu/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gofiodesign.eu/en.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gofiodesign.eu/fr.html"/>
+    <lastmod>2026-02-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
