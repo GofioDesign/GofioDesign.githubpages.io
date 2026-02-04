@@ -1,42 +1,67 @@
 :root {
-    --bg: #F2E9D7; --brown: #62381F; --accent: #BA6F36; --white: #ffffff;
+  --bg: #f2e9d7;
+  --brown: #62381f;
+  --accent: #ba6f36;
+  --white: #ffffff;
 }
-body { font-family: 'Gabarito', sans-serif; background: var(--bg); color: var(--brown); margin: 0; line-height: 1.6; }
+body {
+  font-family: "Gabarito", sans-serif;
+  background: var(--bg);
+  color: var(--brown);
+  margin: 0;
+  line-height: 1.6;
+}
 .lang-nav {
-    position: sticky;
-    top: 0;
-    background: var(--brown);
-    padding: 10px 20px;
-    text-align: right;
-    z-index: 100;
+  position: sticky;
+  top: 0;
+  background: var(--brown);
+  padding: 10px 20px;
+  text-align: right;
+  z-index: 100;
 }
 
 .lang-nav a {
-    color: var(--bg); /* Crema */
-    text-decoration: none;
-    margin-left: 10px;
-    padding: 5px 10px;
-    font-weight: bold;
-    font-size: 0.8rem;
-    border-radius: 2px;
-    transition: all 0.3s ease;
+  color: var(--bg); /* Crema */
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
 /* El estado activo: Inversión de colores */
 .lang-nav a.active {
-    background-color: var(--bg); /* Fondo crema */
-    color: var(--brown);         /* Texto marrón */
+  background-color: var(--bg); /* Fondo crema */
+  color: var(--brown); /* Texto marrón */
 }
 
 .lang-nav a:hover:not(.active) {
-    background-color: var(--accent);
-    color: var(--white);
+  background-color: var(--accent);
+  color: var(--white);
 }
-.hero { padding: 80px 20px; text-align: center; background: var(--white); }
-.logo-svg { width: 150px; margin-bottom: 20px; }
-.layer { padding: 60px 10%; }
-.layer:nth-child(even) { background: var(--white); }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 30px; }
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: var(--white);
+}
+.logo-svg {
+  width: 150px;
+  margin-bottom: 20px;
+}
+.layer {
+  padding: 60px 10%;
+}
+.layer:nth-child(even) {
+  background: var(--white);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 30px;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -52,64 +77,75 @@ body { font-family: 'Gabarito', sans-serif; background: var(--bg); color: var(--
 }
 
 .card h3 i {
-    margin-right: 10px; /* Espacio entre icono y texto */
-    color: #2e7d32;      /* El color verde que sugerimos antes o el de tu marca */
-    font-size: 1.2rem;   /* Un poco más grande para que destaque */
-    vertical-align: middle;
+  margin-right: 10px; /* Espacio entre icono y texto */
+  color: #2e7d32; /* El color verde que sugerimos antes o el de tu marca */
+  font-size: 1.2rem; /* Un poco más grande para que destaque */
+  vertical-align: middle;
 }
 
 .card:hover {
   transform: translateY(-5px);
 }
-footer { background: var(--brown); color: var(--bg); padding: 40px; text-align: center; }
-.contact-link { color: var(--accent); font-weight: bold; text-decoration: none; }
+footer {
+  background: var(--brown);
+  color: var(--bg);
+  padding: 40px;
+  text-align: center;
+}
+.contact-link {
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: none;
+}
 .logo-container {
-    width: 100%;
-    max-width: 250px; /* Ajusta este valor según prefieras el tamaño del logo */
-    margin: 0 auto 20px auto;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  max-width: 250px; /* Ajusta este valor según prefieras el tamaño del logo */
+  margin: 0 auto 20px auto;
+  display: flex;
+  justify-content: center;
 }
 
 .logo-container svg {
-    width: 100%;
-    height: auto;
-    filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.1)); /* Un toque sutil de relieve */
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(
+    0px 4px 6px rgba(0, 0, 0, 0.1)
+  ); /* Un toque sutil de relieve */
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    letter-spacing: 0.1em;
-    margin-top: 10px;
-    font-weight: 800;
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+  margin-top: 10px;
+  font-weight: 800;
 }
 
 .cta-container {
-    text-align: center;
-    padding: 60px 20px; /* Espaciado para que respire al final */
+  text-align: center;
+  padding: 60px 20px; /* Espaciado para que respire al final */
 }
 
 .whatsapp-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    background-color: #62381F; /* El marrón oscuro de tu logo para que sea elegante */
-    color: #F2E9D7; /* El crema de tu fondo */
-    padding: 16px 32px;
-    border-radius: 4px; /* Cuadrado como tus cards */
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    border: 1px solid #62381F;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #62381f; /* El marrón oscuro de tu logo para que sea elegante */
+  color: #f2e9d7; /* El crema de tu fondo */
+  padding: 16px 32px;
+  border-radius: 4px; /* Cuadrado como tus cards */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: 1px solid #62381f;
 }
 
 .whatsapp-btn:hover {
-    background-color: #F2E9D7;
-    color: #62381F;
+  background-color: #f2e9d7;
+  color: #62381f;
 }
 
 .whatsapp-btn i {
-    font-size: 1.4rem;
-    color: #25D366; /* El verde de WhatsApp solo en el icono para que destaque */
+  font-size: 1.4rem;
+  color: #25d366; /* El verde de WhatsApp solo en el icono para que destaque */
 }
