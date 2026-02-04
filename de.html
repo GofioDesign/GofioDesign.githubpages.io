@@ -90,6 +90,17 @@
     </div>
 </main>
 <footer><p>&copy; 2024 Gofio Design</p><div id="email-placeholder"></div></footer>
+<div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: #62381F; color: #F2E9D7; padding: 20px; text-align: center; font-size: 14px; z-index: 10000; box-shadow: 0 -2px 15px rgba(0,0,0,0.4); border-top: 1px solid #BA6F36;">
+    <p style="margin-bottom: 15px; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.4;">
+        Wir verwenden Cookies, um Ihr Erlebnis zu verbessern und den Datenverkehr zu analysieren. 
+        Sie können alle Cookies akzeptieren oder nicht essenzielle Cookies ablehnen. 
+        <a href="privacy.html" style="color: #BA6F36; text-decoration: underline;">Mehr erfahren</a>.
+    </p>
+    <div style="display: flex; justify-content: center; gap: 15px;">
+        <button onclick="acceptCookies()" style="background: #BA6F36; border: none; color: white; padding: 10px 25px; cursor: pointer; border-radius: 4px; font-weight: bold; min-width: 120px;">Akzeptieren</button>
+        <button onclick="rejectCookies()" style="background: transparent; border: 1px solid #F2E9D7; color: #F2E9D7; padding: 10px 25px; cursor: pointer; border-radius: 4px; font-weight: normal; min-width: 120px;">Ablehnen</button>
+    </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
