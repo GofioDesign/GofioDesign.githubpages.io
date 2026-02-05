@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // 1. AÑO DINÁMICO (Prioridad)
+  // 1. AÑO DINÁMICO
   const yearSpan = document.getElementById("current-year");
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
@@ -20,30 +20,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (consent === "true") {
     if (banner) banner.style.display = "none";
-    loadGTM();
+    loadAnalytics(); // Carga todo si ya aceptó antes
   } else if (consent === "false") {
     if (banner) banner.style.display = "none";
   }
 });
 
-// FUNCIONES GTM (Fuera del DOMContentLoaded)
-function loadGTM() {
+// FUNCIÓN PARA CARGAR GTM Y GA4 (Solo tras consentimiento)
+function loadAnalytics() {
   window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", "G-J0176MK9D0");
+
+  // Cargar Script de Google Analytics (gtag.js)
+  var gaScript = document.createElement("script");
+  gaScript.async = true;
+  gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-J0176MK9D0";
+  document.head.appendChild(gaScript);
+
+  // Cargar Script de Tag Manager (GTM)
+  var gtmScript = document.createElement("script");
+  gtmScript.async = true;
+  gtmScript.src = "https://www.googletagmanager.com/gtm.js?id=GTM-55DKZ9C5";
+  document.head.appendChild(gtmScript);
+
+  // Evento de inicio para GTM
   window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-  var f = document.getElementsByTagName("script")[0];
-  var j = document.createElement("script");
-  j.async = true;
-  j.src = "https://www.googletagmanager.com/gtm.js?id=GTM-55DKZ9C5";
-  f.parentNode.insertBefore(j, f);
 }
 
 function acceptCookies() {
-  document.getElementById("cookie-banner").style.display = "none";
+  const banner = document.getElementById("cookie-banner");
+  if (banner) banner.style.display = "none";
   localStorage.setItem("cookieConsent", "true");
-  loadGTM();
+  loadAnalytics();
 }
 
 function rejectCookies() {
-  document.getElementById("cookie-banner").style.display = "none";
+  const banner = document.getElementById("cookie-banner");
+  if (banner) banner.style.display = "none";
   localStorage.setItem("cookieConsent", "false");
 }
